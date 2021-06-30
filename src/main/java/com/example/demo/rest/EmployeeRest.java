@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dao.EmployeeDAO;
 import com.example.demo.model.Employee;
-import com.example.demo.service.EmployeeService;
 
 @RestController
 @RequestMapping("/employee")

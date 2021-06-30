@@ -51,7 +51,7 @@
 		<dependency>    
 		 <groupId>com.apple</groupId>    
 		  <artifactId>AppleJavaExtensions</artifactId>     
-		  <version>1.4</version> </dependency>
+		  <version>3.8</version> </dependency>
 	</dependencies>
 	
 
