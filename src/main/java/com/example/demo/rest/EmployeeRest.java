@@ -28,8 +28,8 @@ public class EmployeeRest {
 	}
 	
 	@GetMapping("list/{id}")
-	public String getEmployee(@PathVariable Integer id){
-		return "Prueba";
+	public Employee getEmployee(@PathVariable Integer id){
+		return employeedao.getById(id);
 	}
 	
 	@PostMapping("/save")
