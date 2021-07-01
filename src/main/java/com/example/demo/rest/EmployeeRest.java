@@ -2,6 +2,7 @@ package com.example.demo.rest;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
@@ -28,8 +29,8 @@ public class EmployeeRest {
 	}
 	
 	@GetMapping("list/{id}")
-	public Employee getEmployee(@PathVariable Integer id){
-		return employeedao.getById(id);
+	public Optional<Employee> getEmployee(@PathVariable Integer id){
+		return employeedao.findById(id);
 	}
 	
 	@PostMapping("/save")
