@@ -1,5 +1,7 @@
 package com.example.demo.model;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -24,6 +26,23 @@ public class Employee {
 	
 	@Column 
 	private String foto;
+	
+	@Column 
+	private Date fecha_nacimiento;
+	
+	@Column 
+	private int ani_experiencia;
+	
+	@Column 
+	private Date fecha_inicio;
+	
+	@Column 
+	private String pais_residencia;
+	
+	@Column 
+	private String ciudad_residencia;
+	
+
 
 	public Integer getId() {
 		return id;
@@ -64,5 +83,46 @@ public class Employee {
 	public void setFoto(String foto) {
 		this.foto = foto;
 	}
+
+	public Date getFecha_nacimiento() {
+		return fecha_nacimiento;
+	}
+
+	public void setFecha_nacimiento(Date fecha_nacimiento) {
+		this.fecha_nacimiento = fecha_nacimiento;
+	}
+
+	public int getAni_experiencia() {
+		return ani_experiencia;
+	}
+
+	public void setAni_experiencia(int ani_experiencia) {
+		this.ani_experiencia = ani_experiencia;
+	}
+
+	public Date getFecha_inicio() {
+		return fecha_inicio;
+	}
+
+	public void setFecha_inicio(Date fecha_inicio) {
+		this.fecha_inicio = fecha_inicio;
+	}
+
+	public String getPais_residencia() {
+		return pais_residencia;
+	}
+
+	public void setPais_residencia(String pais_residencia) {
+		this.pais_residencia = pais_residencia;
+	}
+
+	public String getCiudad_residencia() {
+		return ciudad_residencia;
+	}
+
+	public void setCiudad_residencia(String ciudad_residencia) {
+		this.ciudad_residencia = ciudad_residencia;
+	}
+
 	
 }

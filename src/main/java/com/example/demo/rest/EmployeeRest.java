@@ -26,6 +26,11 @@ public class EmployeeRest {
 		return employeedao.findAll();
 	}
 	
+	@GetMapping("/list/{id}")
+	public Employee getEmployee(Integer id){
+		return employeedao.getById(id);
+	}
+	
 	@PostMapping("/save")
 	public void save (@RequestBody Employee employee) {
 		employeedao.save(employee);
