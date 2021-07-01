@@ -26,7 +26,7 @@ public class EmployeeRest {
 		return employeedao.findAll();
 	}
 	
-	@GetMapping("/list/{id}")
+	@GetMapping("/{id}")
 	public Employee getEmployee(Integer id){
 		return employeedao.getById(id);
 	}
