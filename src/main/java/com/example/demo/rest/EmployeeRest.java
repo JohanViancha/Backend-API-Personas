@@ -34,8 +34,13 @@ public class EmployeeRest {
 	}
 	
 	@PostMapping("/save")
-	public void save (@RequestBody Employee employee) {
-		employeedao.save(employee);
+	public Boolean save (@RequestBody Employee employee) {
+		try {
+			return employeedao.save(employee)!=null?true:false;	
+		}catch(Exception ex) {
+			return false;
+		}
+		
 	}
 	
 	

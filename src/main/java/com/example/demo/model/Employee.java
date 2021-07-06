@@ -1,6 +1,5 @@
 package com.example.demo.model;
 
-import java.time.LocalDate;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -32,14 +31,14 @@ public class Employee {
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
 	@Column 
-	private Date  fecha_nacimiento;
+	private Date fecha_nacimiento;
 	
 	@Column 
 	private int ani_experiencia;
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyy")
 	@Column 
-	private Date  fecha_inicio;
+	private Date fecha_inicio;
 	
 	@Column 
 	private String pais_residencia;
